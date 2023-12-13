@@ -4,7 +4,6 @@ header .navbar {
 
 .cs-wrapper {
     height: calc(100vh - 80px);
-    overflow: auto;
     background-color: green;
 }
 
@@ -17,6 +16,7 @@ header .navbar {
 main {
     flex-grow: 1;
     background-color: yellow;
+    overflow: auto;
 }
 
 .cs-w {
