@@ -42,6 +42,9 @@
                             placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
                     </div>
                 </form>
+                <a class="d-none d-lg-inline" href="#"><i class="fa-solid fa-list cs-bg-g"></i></a>
+                <a class="d-none d-lg-inline" href="#"><i class="fa-solid fa-circle-question cs-bg-g"></i></a>
+                <a class="d-none d-lg-inline" href="#"><i class="fa-solid fa-ellipsis-vertical cs-bg-g"></i></a>
                 <a href="#"><i class="fa-solid fa-bell ms-2"></i></a>
             </div>
         </nav>
@@ -72,8 +75,10 @@
                 <div class="p-4">
                     <div class="row flex-column flex-md-row">
                         <div class="col mb-4 order-md-1 ms-lg-5 text-lg-center">
-                            <span class="fs-5">Nuovo Studente <i
-                                    class="fa-regular fa-square-plus align-middle ps-3"></i></span>
+                            <span class="fs-5">Nuovo Studente</span><button class="upper-content border-0 text-white"
+                                type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                aria-controls="offcanvasRight"> <i
+                                    class="fa-regular fa-square-plus align-middle ps-3"></i></button>
                         </div>
                         <div class="col mb-4 col-xl-5">
                             <h2 class="d-inline">Boolean</h2>
@@ -346,7 +351,71 @@
 
 
 
+    <!-- Offcanva -->
 
+    <div class="offcanvas offcanvas-end cs-offcanvas" tabindex="-1" id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <form>
+                <div class="row">
+                    <div class="col-6 mb-3">
+                        <label for="Nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="Nome" aria-describedby="emailHelp">
+                    </div>
+                    <div class="col-6 mb-3">
+                        <label for="Cognome" class="form-label">Cognome</label>
+                        <input type="text" class="form-control" id="Cognome" aria-describedby="emailHelp">
+                    </div>
+                    <div class="col-6 mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="col-6 mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="col-12 mb-3">
+                        <label for="street" class="form-label">Indirizzo</label>
+                        <input type="text" class="form-control" id="street" aria-describedby="emailHelp">
+                    </div>
+                    <div class="col-6 mb-3">
+                        <label for="city" class="form-label">Città</label>
+                        <input type="text" class="form-control" id="city" aria-describedby="emailHelp">
+                    </div>
+                    <div class="col-4 mb-3">
+                        <label for="country" class="form-label">Stato</label>
+                        <select class="form-control" id="country">
+                            <option value="">Scegli</option>
+                            <option value="it">Italy</option>
+                            <option value="fr">France</option>
+                        </select>
+                    </div>
+                    <div class="col-2 mb-3">
+                        <label for="cap" class="form-label">Cap</label>
+                        <input type="text" class="form-control" id="cap" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="inputGroupFile01">Upload</label>
+                        <input type="file" class="form-control" id="inputGroupFile01">
+                    </div>
+                    <div class="mb-3 form-check ms-3 col-12">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Seleziona per proseguire</label>
+                    </div>
+                    <div class="col-1 me-1">
+                        <button type="submit" class="btn btn-primary">Salva</button>
+                    </div>
+                    <div class="col-1">
+                        <button type="reset" class="btn btn-warning">Svuota</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 
     <!-- Javascript Bootstrap -->
 
