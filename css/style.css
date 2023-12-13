@@ -15,7 +15,7 @@ header .navbar {
 
 main {
     flex-grow: 1;
-    background-color: yellow;
+    background-color: rgb(248, 249, 250);
     overflow: auto;
 }
 
@@ -39,7 +39,6 @@ main {
 
 .upper-content {
     background-color: rgb(27, 114, 232);
-    min-height: 300px;
 }
 
 .fa-square-plus {
@@ -57,4 +56,17 @@ img {
 
 .cs-w-50 {
     width: 35px;
+}
+
+.cs-m-670 {
+    margin-top: 670px;
+}
+
+
+/* Responsive */
+
+@media screen and (min-width: 1200px) {
+    .cs-sidebar {
+        flex-basis: 130px;
+    }
 }
