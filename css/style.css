@@ -86,6 +86,10 @@ img {
 }
 
 
+th:not(:first-child) {
+    width: 6.5rem;
+}
+
 /* Responsive */
 
 @media screen and (min-width: 1200px) {
